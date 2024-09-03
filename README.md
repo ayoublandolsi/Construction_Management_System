@@ -2,25 +2,46 @@
 
 This project is a Construction Management System that allows users to manage construction sites efficiently. It includes features to track progress, manage resources, and generate reports.
 
-![Image 1](images/Image1.jpg)
-![Image 2](images/Image2.jpg)
-![Image 3](images/Image3.jpg)
-![Image 4](images/Image4.jpg)
-![Image 5](images/Image5.jpg)
-![Image 6](images/Image6.jpg)
-![Image 7](images/Image7.jpg)
-![Image 8](images/Image8.jpg)
-![Image 9](images/Image9.jpg)
-![Image 10](images/Image10.jpg)
-![Image 11](images/Image11.jpg)
-![Image 12](images/Image12.jpg)
-![Image 13](images/Image13.jpg)
-![Image 14](images/Image14.jpg)
-![Image 15](images/Image15.jpg)
-![Image 16](images/Image16.jpg)
-![Image 17](images/Image17.jpg)
-![Image 18](images/Image18.jpg)
-![Image 19](images/Image19.jpg)
+## Project Images
+
+Below are some screenshots of the application:
+<p align="center">
+  <img src="images/Image1.jpg" alt="Image 1" width="200" height="150"/>
+  <img src="images/Image2.jpg" alt="Image 2" width="200" height="150"/>
+  <img src="images/Image3.jpg" alt="Image 3" width="200" height="150"/>
+</p>
+
+<p align="center">
+  <img src="images/Image4.jpg" alt="Image 4" width="200" height="150"/>
+  <img src="images/Image5.jpg" alt="Image 5" width="200" height="150"/>
+  <img src="images/Image6.jpg" alt="Image 6" width="200" height="150"/>
+</p>
+
+<p align="center">
+  <img src="images/Image7.jpg" alt="Image 7" width="200" height="150"/>
+  <img src="images/Image8.jpg" alt="Image 8" width="200" height="150"/>
+  <img src="images/Image9.jpg" alt="Image 9" width="200" height="150"/>
+</p>
+
+<p align="center">
+  <img src="images/Image10.jpg" alt="Image 10" width="200" height="150"/>
+  <img src="images/Image11.jpg" alt="Image 11" width="200" height="150"/>
+  <img src="images/Image12.jpg" alt="Image 12" width="200" height="150"/>
+</p>
+
+<p align="center">
+  <img src="images/Image13.jpg" alt="Image 13" width="200" height="150"/>
+  <img src="images/Image14.jpg" alt="Image 14" width="200" height="150"/>
+  <img src="images/Image15.jpg" alt="Image 15" width="200" height="150"/>
+</p>
+
+<p align="center">
+  <img src="images/Image16.jpg" alt="Image 16" width="200" height="150"/>
+  <img src="images/Image17.jpg" alt="Image 17" width="200" height="150"/>
+  <img src="images/Image18.jpg" alt="Image 18" width="200" height="150"/>
+    <img src="images/Image19.jpg" alt="Image 19" width="200" height="150"/>
+
+</p>
 
 ## Features
 
@@ -40,6 +61,3 @@ This project is a Construction Management System that allows users to manage con
   - Print reports
 - **Assign tasks** to employees
 
-## Project Images
-
-Below are some screenshots of the application:
