@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestion des employés</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <STYle>.containe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .title {
+        font-size: 24px;
+        margin-right: 250px;
+      }
+      
+      .btn-group {
+        display: flex;
+        align-items: center;
+      }
+      
+      .btn {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+      
+      .btn-add {
+        background-color: #007bff;
+      }
+      
+      .btn:hover {
+        background-color: #3e8e41;
+      }
+      
+      .btn-add:hover {
+        background-color: #065dba;
+      }
+      /* Navbar styles */
+      .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #fff;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            transform: translateY(-3px);
+        }
+
+        .navbar a.active {
+            background-color: #fff;
+            color: #2c3e50;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .navbar i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        
+          </STYle>
+</head>
+<body>
+	<header class="header">
+		<div class="navbar">
+            <div class="logo">Responsable de ressources humaines</div>
+            <div class="nav-links">
+                <a href="homechefchantier.html" class="active"><i class="fa fa-home"></i> Home</a>
+                <a href="#" class=""><i class="fa fa-cog"></i> Settings</a>
+                <a href="systeme gestion des chantiers.html"><i class="fa fa-sign-out"></i> Log Out</a>
+            </div>
+        </div>
+	</header>
+	<main class="main">
+        <div class="containe">
+            <h2 class="title">Les listes des employés</h2>
+            <div class="btn-group">
+                <a href="ajouter employe.html" class="btn btn-add">Ajouter un employé</a>
+            </div>
+        </div>
+        
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nom complet</th>
+					<th>Poste</th>
+					<th>Date d'embauche</th>
+					<th>Salaire</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Ahmed Lajmi</td>
+					<td>maçon</td>
+					<td>2021-05-01</td>
+					<td>5000 DT</td>
+					<td>
+						<a href="modifier.html" class="btn">Modifier</a>
+						<a href="suppp.html" class="btn" style="background-color: #f44336;">Supprimer</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>mohamed chalali</td>
+					<td>Architecture de bâtiment</td>
+					<td>2022-01-15</td>
+					<td>3500 DT</td>
+					<td>
+						<a href="modifier.html" class="btn">Modifier</a>
+						<a href="supprimer.html" class="btn"style="background-color: #f44336;">Supprimer</a>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Adel Mokhtar</td>
+					<td>Technicien en électricité</td>
+					<td>2023-02-28</td>
+					<td>2000 DT</td>
+					<td>
+						<a href="modifier.html" class="btn">Modifier</a>
+						<a href="supprimer.html" class="btn"  style="background-color: #f44336;">Supprimer</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+        <a href="homechefchantier.html" class="btn" style="float:left;margin-right: 300px;background-color: #274eb9;margin-right: 500px;">Retour</a>
+	
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; 2023 landolsi. Tous droits réservés.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

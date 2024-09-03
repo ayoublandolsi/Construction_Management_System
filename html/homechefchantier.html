@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Système de gestion de chantiers</title>
+	<style>
+		body {
+			background-image: url("background.jpg");
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+            background-color: #2c3e50;
+            color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+
+		.container {
+			max-width: 400px;
+			margin: 50px auto;
+			padding: 20px;
+			background-color:#fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		h1 {
+			margin-top: 0;
+		}
+
+		.btn {
+			display: block;
+			margin: 20px auto;
+			padding: 10px 20px;
+			background-color: #2c3e50;
+            color: #fff;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 20px;
+			width: 200px;
+		}
+
+		.btn:hover {
+            background-color: #1c2733;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #fff;
+            margin-left: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            transform: translateY(-3px);
+        }
+
+        .navbar a.active {
+            background-color: #fff;
+            color: #2c3e50;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .navbar i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="navbar">
+            <div class="logo">Chef Chantier: Ayoub Landolsi</div>
+            <div class="nav-links">
+                <a href="homechefchantier.html" class="active"><i class="fa fa-home"></i> Home</a>
+                <a href="#" class=""><i class="fa fa-cog"></i> Settings</a>
+                <a href="systeme gestion des chantiers.html"><i class="fa fa-sign-out"></i> Log Out</a>
+            </div>
+        </div>
+	</header>
+
+	<div class="container">
+        <a href="gestion des chantier.html" class="btn">Gérer des chantiers</a>
+		<a href="rappochef.HTML" class="btn">Consulter un rapport</a>
+        <a href="assiner des taches.html" class="btn">Assiner des tache au employé</a>
+        <a href="demandeestimation.html" class="btn">Demander une estimation</a>
+	</div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>&copy; 2023 Landolsi. Tous droits réservés.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+      
+</body>
+</html>

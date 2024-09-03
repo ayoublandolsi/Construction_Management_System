@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Estimateur de coûts de chantier</title>
+    <link rel="stylesheet" href="stye.css">
+    <style>
+    body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Style pour l'en-tête */
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+header h1 {
+margin: 0;
+font-size: 36px;
+}
+
+/* Style pour la section de demande */
+#demande {
+margin: 20px;
+}
+
+#demande h2 {
+font-size: 24px;
+}
+
+#demande p {
+font-size: 18px;
+}
+
+/* Style pour la section d'estimation */
+#estimation {
+margin: 20px;
+}
+
+#estimation h2 {
+font-size: 24px;
+}
+
+#estimation table {
+border-collapse: collapse;
+width: 100%;
+margin-top: 20px;
+}
+
+#estimation th {
+background-color: #333;
+color: #fff;
+font-size: 18px;
+font-weight: normal;
+padding: 10px;
+text-align: left;
+}
+
+#estimation td {
+border: 1px solid #ccc;
+font-size: 16px;
+padding: 10px;
+text-align: left;
+}
+
+#estimation td:first-child {
+font-weight: bold;
+}
+
+#estimation td:last-child {
+font-weight: bold;
+}
+
+#estimation tr:last-child {
+background-color: #f2f2f2;
+font-weight: bold;
+}
+
+/* Style pour le pied de page */
+footer {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+font-size: 14px;
+}
+.print-button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+
+		.print-button:hover {
+			background-color: #3e8e41;
+		}
+    </style>
+      
+  </head>
+  <body>
+    <header>
+      <h1>Estimateur de coûts de chantier</h1>
+    </header>
+    <section id="demande">
+      <h2>Demande de rapport</h2>
+      <p>Chantier : Immeuble à Sousse</p>
+      <p>Nombre d'étages : 10</p>
+      <p>Nombre d'appartements : 50</p>
+      <p>Surface totale : 2000m²</p>
+    </section>
+    <section id="estimation">
+      <h2>Estimation de coûts</h2>
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Quantité</th>
+          <th>Prix unitaire</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Fondations</td>
+          <td>200m³</td>
+          <td>50 DT/m³</td>
+          <td>10 000 DT</td>
+        </tr>
+        <tr>
+          <td>Murs extérieurs</td>
+          <td>800m²</td>
+          <td>100 DT/m²</td>
+          <td>80 000 DT</td>
+        </tr>
+        <tr>
+          <td>Murs intérieurs</td>
+          <td>600m²</td>
+          <td>50 DT/m²</td>
+          <td>30 000 DT</td>
+        </tr>
+        <tr>
+          <td>Plafonds</td>
+          <td>800m²</td>
+          <td>70 DT/m²</td>
+          <td>56 000 DT</td>
+        </tr>
+        <tr>
+          <td>Revêtement sols</td>
+          <td>800m²</td>
+          <td>40 DT/m²</td>
+          <td>32 000 DT</td>
+        </tr>
+        <tr>
+          <td>Électricité</td>
+          <td>1 000m²</td>
+          <td>60 DT/m²</td>
+          <td>60 000 DT</td>
+        </tr>
+        <tr>
+          <td>Plomberie</td>
+          <td>1 000m²</td>
+          <td>50 DT/m²</td>
+          <td>50 000 DT</td>
+        </tr>
+        <tr>
+          <td>Menuiseries</td>
+          <td>80 unités</td>
+          <td>500 DT/unité</td>
+          <td>40 000 DT</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td></td>
+          <td>358 000 DT</td>
+        </tr>
+      </table> 
+      <div style="margin-top: 30px;margin-bottom: 40px;">
+      <a href="rappochef.html" class="btn" style="float:left;margin-right: 300px;background-color:red;">Retour </a>
+      <a  class="btn" style="float:right;background-color: #4CAF50;">
+      <button class="print-button" onclick="window.print()">Imprimer</button></a>
+    </div>
+    <div style="margin-top: 800px;">, </div>
+</section>
+
+    
+    </body>
+    </html>

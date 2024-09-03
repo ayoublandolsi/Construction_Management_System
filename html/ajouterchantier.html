@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajouter un chantier</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<h1>Ajouter un chantier</h1>
+	</header>
+
+	<div class="container">
+		<form action="ajouter_chantier.php" method="post">
+			<label for="nom">Nom du chantier :</label>
+			<input type="text" id="nom" name="nom" required>
+
+			<label for="adresse">Adresse du chantier :</label>
+			<input type="text" id="adresse" name="adresse" required>
+
+			<label for="date_debut">Date de début :</label>
+			<input type="date" id="date_debut" name="date_debut" required>
+
+			<label for="date_fin">Date de fin :</label>
+			<input type="date" id="date_fin" name="date_fin" required>
+
+			<label for="description">Description :</label>
+			<textarea id="description" name="description" required></textarea>
+        
+			<a href="homechefchantier.html" class="btn">Ajouter le chantier</a>
+		</form>
+	</div>
+</body>
+</html>

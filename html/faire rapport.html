@@ -1,0 +1,168 @@
+
+    <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulaire d'estimation de coûts de chantier</title>
+  
+  <style>form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #F2F2F2;
+}
+tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+tr:hover {
+  background-color: #E5E5E5;
+}
+td:first-child, th:first-child {
+  text-align: center;
+  width: 25%;
+}
+td:nth-child(2), th:nth-child(2) {
+  width: 25%;
+}
+td:last-child, th:last-child {
+  text-align: right;
+  width: 25%;
+}
+
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>Formulaire d'estimation de coûts de chantier</h1>
+    </header>
+    <form action="estimation.php" method="POST">
+      <fieldset>
+        <legend>Informations sur le chantier</legend>
+        <label for="chantier">Chantier :</label>
+        <input type="text" id="chantier" name="chantier"placeholder="Immeuble à Sousse" required>
+        <br>
+        <label for="etages">Nombre d'étages :</label>
+        <input type="number" id="etages" name="etages" placeholder="10" required>
+        <br>
+        <label for="appartements">Nombre d'appartements :</label>
+        <input type="number" id="appartements" name="appartements" placeholder="50" required>
+        <br>
+        <label for="surface">Surface totale :</label>
+        <input type="number" id="surface" name="surface"placeholder="2000" required>
+        <span>m²</span>
+      </fieldset>
+      <fieldset>
+        <legend>Estimation des coûts</legend>
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Quantité</th>
+              <th>Prix unitaire (DT)</th>
+              <th>Total (DT)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label for="fondations">Fondations :</label></td>
+              <td><input type="number" id="fondations" name="fondations" required></td>
+              <td><input type="number" id="prix-fondations" name="prix-fondations" value="50" readonly> DT/m³</td>
+              <td><input type="text" id="total-fondations" name="total-fondations" readonly> DT</td>
+            </tr>
+            <tr>
+              <td><label for="murs-exterieurs">Murs extérieurs :</label></td>
+              <td><input type="number" id="murs-exterieurs" name="murs-exterieurs" required></td>
+              <td><input type="number" id="prix-murs-exterieurs" name="prix-murs-exterieurs" value="100" readonly> DT/m²</td>
+              <td><input type="text" id="total-murs-exterieurs" name="total-murs-exterieurs" readonly> DT</td>
+            </tr>
+            <tr>
+              <td><label for="murs-interieurs">Murs intérieurs :</label></td>
+              <td><input type="number" id="murs-interieurs" name="murs-interieurs" required></td>
+              <td><input type="number" id="prix-murs-interieurs" name="prix-murs-interieurs" value="50" readonly> DT/m²</td>
+              <td><input type="text" id="total-murs-interieurs" name="total-murs-interieurs" readonly> DT</td>
+            </tr>
+            <tr>
+              <td><label for="plafonds">Plafonds :</label> </td> </tr>
+            
+             
+
+    <section id="estimation">
+        <h2>Estimation de coûts</h2>
+        <form>
+          <label for="fondations">Fondations (DT/m³)</label>
+          <input type="number" id="fondations" name="fondations" value="50">
+          <br>
+          <label for="murs_ext">Murs extérieurs (DT/m²)</label>
+          <input type="number" id="murs_ext" name="murs_ext" value="100">
+          <br>
+          <label for="murs_int">Murs intérieurs (DT/m²)</label>
+          <input type="number" id="murs_int" name="murs_int" value="50">
+          <br>
+          <label for="plafonds">Plafonds (DT/m²)</label>
+          <input type="number" id="plafonds" name="plafonds" value="70">
+          <br>
+          <label for="revet_sols">Revêtement sols (DT/m²)</label>
+          <input type="number" id="revet_sols" name="revet_sols" value="40">
+          <br>
+          <label for="electricite">Électricité (DT/m²)</label>
+          <input type="number" id="electricite" name="electricite" value="60">
+          <br>
+          <label for="plomberie">Plomberie (DT/m²)</label>
+          <input type="number" id="plomberie" name="plomberie" value="50">
+          <br>
+          <label for="menuiseries">Menuiseries (DT/unité)</label>
+          <input type="number" id="menuiseries" name="menuiseries" value="500">
+          <br>
+        
+        </form>
+      </section>
+      <section>
+      <a href="imprimer rapport.html" class="btn" style="float:right;background-color: #4CAF50;">Calculer</a>
+     </section>
+    </body>
+    </html>
+      

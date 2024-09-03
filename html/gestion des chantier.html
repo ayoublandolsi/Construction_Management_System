@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestion des chantiers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>.containe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .title {
+        font-size: 30px;
+        margin-right: 280px;
+      }</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Gestion des chantiers</h1>
+	</header>
+	<main class="main">
+        <div class="containe">
+            <h2 class="title">Liste des chantiers</h2>
+            <div class="btn-group">
+				<a href="ajouterchantier.html" class="btn" style="float:right;background-color: #4CAF50;">Ajouter un chantier</a>
+
+            </div>
+        </div>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nom du chantier</th>
+					<th>Adresse</th>
+					<th>Date de début</th>
+					<th>Date de fin</th>
+					<th>Coût estimé</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Rénovation de la maison Albaraka</td>
+					<td>46 rue sfax, M,saken</td>
+					<td>2023-01-15</td>
+					<td>2023-06-15</td>
+					<td>50 000 $</td>
+					<td>
+                        <a href="modifierchantier.html" class="btn"style="background-color: #4336f4;">Modifier</a>
+						<a href="supprimerchantier.html" class="btn" style="background-color: #f44336;">Supprimer</a>
+						<a href="suivrelavancement.html" class="btn">Suivre l'avancement</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Construction de l'immeuble landolsi</td>
+					<td>456 rue du sousse, M,saken</td>
+					<td>2023-03-01</td>
+					<td>2024-06-30</td>
+					<td>2 000 000 $</td>
+					<td>
+                        <a href="modifierchantier.html" class="btn" style="background-color: #4336f4;">Modifier</a>
+						<a href="supprimerchantier.html" class="btn" style="background-color: #f44336;">Supprimer</a>
+						<a href="suivrelavancement.html" class="btn">Suivre l'avancement</a>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Rénovation de la piscine de salah</td>
+					<td>'43 rue Principale, sousse</td>
+					<td>2023-05-15</td>
+					<td>2023-08-30</td>
+					<td>100 000 $</td>
+					<td>
+                        <a href="modifierchantier.html" class="btn" style="background-color: #4336f4;">Modifier</a>
+						<a href="supprimerchantier.html" class="btn" style="background-color: #f44336;">Supprimer</a>
+						<a href="suivrelavancement.html" class="btn">Suivre l'avancement</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="containe">
+			<a href="homechefchantier.html" class="btn" style="float:left;margin-right: 300px;background-color: #f44336;">Retour</a>
+			
+		</div>
+	</main>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>&copy; 2023 landolsi. Tous droits réservés.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>

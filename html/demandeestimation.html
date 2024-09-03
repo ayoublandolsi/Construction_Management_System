@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulaire d'estimation de coûts de chantier</title>
+  
+  <style>form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-right: 0;
+    padding-left: 100px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="number"] {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    justify-content: center;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #F2F2F2;
+}
+tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+tr:hover {
+  background-color: #E5E5E5;
+}
+td:first-child, th:first-child {
+  text-align: center;
+  width: 25%;
+}
+td:nth-child(2), th:nth-child(2) {
+  width: 25%;
+}
+td:last-child, th:last-child {
+  text-align: right;
+  width: 25%;
+}
+
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>demander un rapport </h1>
+    </header>
+    <form action="estimation.php" method="POST">
+      <fieldset>
+        <legend>Remplir les Informations de chantier</legend>
+        <label for="chantier">Chantier :</label>
+        <input type="text" id="chantier" name="chantier" required>
+        <br>
+        <label for="etages">Nombre d'etages :</label>
+        <input type="number" id="etages" name="etages" required>
+        <br>
+        <label for="appartements">Nombre d'appartements :</label>
+        <input type="number" id="appartements" name="appartements"  required>
+        <br>
+        <label for="surface">Surface totale :</label>
+        <input type="number" id="surface" name="surface" required>
+        <a href="homechefchantier.html" class="btn" style="background-color: #4CAF50;">envoyer une demande</a>
+      </fieldset>
+      </form>
+    </body>
+    </html>

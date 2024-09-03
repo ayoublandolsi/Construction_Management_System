@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Système de Gestion de Chantier</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Bienvenue sur le système de gestion de chantier</h1>
+		<form>
+			<label for="role">Je suis:</label>
+			<select id="role">
+				<option value="chef">Chef de Chantier</option>
+				<option value="estimation">Estimateur de Coût</option>
+				<option value="ressources">Responsable des Ressources Humaines</option>
+			</select>
+			<label for="username">Nom d'utilisateur:</label>
+			<input type="text" id="username" name="username">
+			<label for="password">Mot de passe:</label>
+			<input type="password" id="password" name="password">
+			<button type="submit" onclick="redirectToInterface()"> se connecter </button>
+		</form>
+	</div>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>&copy; 2023 landolsi. Tous droits réservés.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script>
+	function redirectToInterface() {
+  const role = document.getElementById("role").value;
+  let page = "";
+
+  switch (role) {
+    case "chef":
+      page = "homechefchantier.html";
+      break;
+    case "estimation":
+      page = "HOME ESTIMATEUR.html";
+      break;
+    case "ressources":
+      page = "gestion employee.html";
+      break;
+    default:
+      alert("Rôle inconnu!");
+  }
+
+  window.location.href = page;
+}
+
+document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+  event.preventDefault();
+  redirectToInterface();
+});
+</script>
+</body>
+</html>

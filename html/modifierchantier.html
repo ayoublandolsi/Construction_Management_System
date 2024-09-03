@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Modifier un chantier</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<h1>Modifier un chantier</h1>
+	</header>
+	<form action="modifier_chantier.php" method="post">
+		<label for="nom_chantier">Nom du chantier :</label>
+		<input type="text" name="nom_chantier" id="nom_chantier" placeholder="renovation de la maison Albaraka" required>
+		<label for="adresse">Adresse :</label>
+		<input type="text" name="adresse" id="adresse" placeholder="M,saken 46 rue de sfax" required>
+		<label for="date_debut">Date de début :</label>
+		<input type="date" name="date_debut" id="date_debut" placeholder="2023/O1/15" required>
+		<label for="date_fin">Date de fin :</label>
+		<input type="date" name="date_fin" id="date_fin" placeholder="2023/06/15" required>
+        <a href="homechefchantier.html" class="btn">Modifier le chantier</a>
+
+        
+	</form>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modifier un employé</title>
+	<link rel="stylesheet" type="text/css" href="styl.css">
+    <style>
+  .btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  justify-content: center;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.btn:hover {
+  background-color: #0062cc;
+}
+
+.btn-danger {
+  display: inline-block;
+  background-color: #f44336;
+  justify-content: center;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.btn-danger:hover {
+  background-color: #ce3d3d;
+}
+
+    
+      /* Global styles */
+body {
+	background-color:aliceblue;
+	background-size: cover;
+	font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+	
+	color: white;
+	padding: 0em;
+}
+
+/* Navbar styles */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2c3e50;
+	padding: 20px 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.navbar a {
+	display: inline-block;
+	color: #fff;
+	margin-left: 10px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+	transform: translateY(-3px);
+}
+
+.navbar a.active {
+	background-color: #fff;
+	color: #2c3e50;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.navbar i {
+	font-size: 20px;
+	margin-right: 0px;
+}
+
+/* Main content styles */
+.main {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"] {
+	padding: 8px;
+	margin-bottom: 20px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+	outline: none;
+	border-color: #007bff;
+}
+
+
+/* Footer styles */
+footer {
+	background-color: #003366;
+	color: white;
+	padding: 1em;
+	text-align: center;
+    border-radius: 20px;
+}
+
+    </STYle>
+</head>
+<body>
+    <header class="header">
+		<div class="navbar">
+            <div class="logo">Responsable des ressources humaines </div>
+            <div class="nav-links">
+                <a href="HOME RESPONSABLE.HTML" class="active"><i class="fa fa-home"></i> Home</a>
+                <a href="#" class=""><i class="fa fa-cog"></i> Settings</a>
+                <a href="systeme gestion des chantiers.html"><i class="fa fa-sign-out"></i> Log Out</a>
+            </div>
+        </div>
+	</header>
+	<main class="main">
+		<h2 class="title">Modifier les information d'un employé</h2>
+		<form action="#" method="post">
+			<label for="nom">Nom :</label>
+			<input type="text" id="nom" name="nom" placeholder="ahmed " required>
+			<label for="prenom">Prénom :</label>
+			<input type="text" id="prenom" name="prenom" placeholder="lajmi" required>
+			<label for="adresse">Adresse :</label>
+			<input type="text" id="adresse" name="adresse" placeholder="sousse" required>
+			<label for="telephone">Téléphone :</label>
+			<input type="tel" id="telephone" name="telephone" placeholder="50 444 128" required>
+			<label for="poste">Poste :</label>
+			<input type="text" id="poste" name="poste" placeholder="Architecture de batiment" required>
+            <a href="gestion employee.html" class="btn">enregistrer les modifications</a><a href="gestion employee.html" class="btn btn-danger">retour</a>
+
+		</form>
+	</main>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>&copy; 2023 landolsi. Tous droits réservés.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
