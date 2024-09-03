@@ -24,7 +24,7 @@ Below are some screenshots of the application:
 </p>
 
 <p align="center">
-  <img src="images/Image11.jpg" alt="Image 11" width="300" height="200"/>
+  <img src="images/Image11.png" alt="Image 11" width="300" height="200"/>
       <img src="images/Image19.jpg" alt="Image 19" width="300" height="200"/>
   <img src="images/Image12.jpg" alt="Image 12" width="300" height="200"/>
 </p>
